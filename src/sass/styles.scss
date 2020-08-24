@@ -4,3 +4,26 @@ html,
 body {
   background: $white;
 }
+
+p-menu.header-menu {
+  display: flex;
+  align-items: center;
+  .ui-menu {
+    ul {
+      display: flex;
+      list-style: none;
+      span {
+        margin: 10px;
+        font-family: $poppins-light;
+        font-size: 20px;
+        color: navy;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .ui-menuitem-link:focus {
+      outline: none;
+    }
+  }
+}

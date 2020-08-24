@@ -1,0 +1,27 @@
+@import "styles";
+
+:host {
+  .contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    padding: 20px;
+    div {
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      h1 {
+        font-size: 80px;
+        font-family: $poppins-medium;
+        margin: 20px;
+      }
+      a {
+        font-size: 60px;
+        font-family: $poppins-light;
+        margin: 20px;
+        text-decoration: none;
+        color: $black;
+      }
+    }
+  }
+}

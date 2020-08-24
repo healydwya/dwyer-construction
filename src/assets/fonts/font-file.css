@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "motel";
+  src: url("./motel.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "library";
+  src: url("./library.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "poppins-medium";
+  src: url("./poppins-medium.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "poppins-light";
+  src: url("./poppins-light.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "poppins-semibold";
+  src: url("./poppins-semibold.ttf") format("opentype");
+}

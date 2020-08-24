@@ -1,12 +1,4 @@
 @import "styles";
+
 :host {
-  .page-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  h1 {
-    font-family: $lato;
-    color: $blue;
-  }
 }

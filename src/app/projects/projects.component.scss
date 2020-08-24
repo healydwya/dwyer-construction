@@ -1,0 +1,25 @@
+@import "styles";
+
+:host {
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      font-family: $poppins-medium;
+      color: navy;
+      font-size: 32px;
+      text-align: center;
+      font-weight: 500;
+    }
+    .img-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 4px;
+      img {
+        height: 400px;
+        margin: 20px;
+      }
+    }
+  }
+}

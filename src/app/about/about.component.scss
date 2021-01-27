@@ -4,9 +4,8 @@
   .about {
     display: flex;
     justify-content: center;
-    padding: 20px;
     align-items: center;
-    margin-top: 200px;
+    height: 100vh;
     h2 {
       font-family: $poppins-light;
       font-size: 40px;

@@ -1,7 +1,13 @@
 <div class="page-header">
-    <h1 (click)="toHome()">Dwyer Construction</h1>
+  <h1 (click)="toHome()">Dwyer Construction</h1>
+  <div class="web-menu">
     <p-menu class="header-menu" [model]="items"></p-menu>
-<!--   <div class="contact">
-    <button (click)="toContact()" pButton type="button" label="Contact"></button>
-  </div> -->
+    <div class="contact">
+      <button (click)="toContact()" pButton type="button" label="Contact"></button>
+    </div>
+  </div>
+  <div class="mobile-menu">
+    <button type="button" pButton icon="pi pi-bars" (click)="menu.toggle($event)"></button>
+    <p-menu #menu [popup]="true" [model]="items"></p-menu>
+  </div>
 </div>

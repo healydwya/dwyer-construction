@@ -2,15 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { Routes, RouterModule, Router } from '@angular/router';
 
 @Component({
-  selector: 'app-home-page',
-  templateUrl: './home-page.component.html',
-  styleUrls: ['./home-page.component.scss'],
+  selector: 'app-page-footer',
+  templateUrl: './page-footer.component.html',
+  styleUrls: ['./page-footer.component.scss'],
 })
-export class HomePageComponent implements OnInit {
+export class PageFooterComponent implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit(): void {}
-
   toContact() {
     this.router.navigate(['/app-contact']);
   }

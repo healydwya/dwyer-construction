@@ -3,7 +3,7 @@
 :host {
   .page-header {
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 70% 18% 12%;
     position: fixed;
     top: 0;
     left: 0;
@@ -11,24 +11,30 @@
     align-items: center;
     background: $white;
     height: 120px;
-    .contact {
+    .web-menu {
       display: flex;
-      justify-content: flex-end;
-      margin-right: 20px;
-      button {
-        width: 100px;
-        height: 50px;
-        align-self: center;
-        background: white;
-        text-shadow: none;
-        border: 1px solid navy;
-        background: navy;
-        color: white;
-        font-family: $poppins-medium;
-        cursor: pointer;
-        font-size: 16px;
-        &:hover {
-          opacity: 0.8;
+      p-menu {
+        display: flex;
+        justify-content: flex-end;
+      }
+      .contact {
+        display: flex;
+        justify-content: center;
+        button {
+          width: 100px;
+          height: 50px;
+          align-self: center;
+          background: white;
+          text-shadow: none;
+          border: 1px solid navy;
+          background: navy;
+          color: white;
+          font-family: $poppins-medium;
+          cursor: pointer;
+          font-size: 16px;
+          &:hover {
+            opacity: 0.8;
+          }
         }
       }
     }
@@ -40,6 +46,31 @@
       font-weight: 500;
       &:hover {
         cursor: pointer;
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      .mobile-menu {
+        display: block;
+        margin: 20px;
+        .ui-button {
+          width: 32px;
+          background: transparent;
+          border: none;
+          font-size: 20px;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+      .web-menu {
+        display: none;
+      }
+      h1 {
+        font-size: 20px;
       }
     }
   }

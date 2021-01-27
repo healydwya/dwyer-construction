@@ -12,11 +12,25 @@
       margin: 20px;
     }
   }
+  app-page-footer {
+    display: none;
+    margin-top: 20%;
+  }
   .initial-photo {
     display: flex;
     justify-content: center;
     .initial-img {
       width: 100vw;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .intro-text {
+      h2 {
+        font-size: 20px;
+      }
+    }
+    app-page-footer {
+      display: flex;
     }
   }
 }

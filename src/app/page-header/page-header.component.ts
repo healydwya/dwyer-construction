@@ -21,11 +21,7 @@ export class PageHeaderComponent implements OnInit {
       {
         label: 'Projects',
         routerLink: ['/app-projects'],
-      },
-      {
-        label: 'Contact',
-        routerLink: ['/app-contact'],
-      },
+      }
     ];
   }
 

@@ -3,6 +3,7 @@
 html,
 body {
   background: $white;
+  overflow-x: hidden;
 }
 
 p-menu.header-menu {
@@ -24,6 +25,34 @@ p-menu.header-menu {
     }
     .ui-menuitem-link:focus {
       outline: none;
+    }
+  }
+}
+
+.mobile-menu {
+  display: none;
+  a.ui-menuitem-link {
+    font-family: $poppins-light;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  p-menu.header-menu {
+    .ui-menu {
+      ul {
+        display: none;
+      }
+    }
+  }
+  .mobile-menu {
+    display: flex;
+    button.ui-button {
+      width: 32px;
+      background: transparent;
+      border: none;
+    }
+    p-menu .ui-menu {
+      background: white;
     }
   }
 }

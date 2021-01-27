@@ -19,6 +19,24 @@
       img {
         height: 400px;
         margin: 20px;
+        width: 40vw;
+      }
+    }
+    app-page-footer {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .projects {
+      .img-grid {
+        display: flex;
+        flex-direction: column;
+        img {
+          width: 100vw;
+        }
+      }
+      app-page-footer {
+        display: flex;
       }
     }
   }

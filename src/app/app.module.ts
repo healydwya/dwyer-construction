@@ -12,9 +12,10 @@ import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { PageFooterComponent } from './page-footer/page-footer.component';
 
 @NgModule({
-  declarations: [AppComponent, PageHeaderComponent, AboutComponent, ProjectsComponent, ContactComponent, HomePageComponent],
+  declarations: [AppComponent, PageHeaderComponent, AboutComponent, ProjectsComponent, ContactComponent, HomePageComponent, PageFooterComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

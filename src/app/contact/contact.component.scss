@@ -4,24 +4,46 @@
   .contact {
     display: flex;
     justify-content: center;
-    margin-top: 150px;
+    margin-top: 30vh;
+    align-items: center;
     padding: 20px;
+    flex-direction: column;
     div {
-      justify-content: center;
       display: flex;
-      flex-direction: column;
-      h1 {
-        font-size: 80px;
+      align-items: center;
+      width: 300px;
+      h2 {
+        font-size: 24px;
         font-family: $poppins-medium;
         margin: 20px;
       }
+      img {
+        height: 26px;
+        &.linked {
+          height: 40px;
+        }
+        &.reg {
+          padding: 8px;
+        }
+      }
       a {
-        font-size: 60px;
+        font-size: 16px;
         font-family: $poppins-light;
         margin: 20px;
-        text-decoration: none;
+        text-decoration: underline;
         color: $black;
       }
+      h3 {
+        font-size: 16px;
+        font-family: $poppins-light;
+        margin: 20px;
+        color: $black;
+      }
+    }
+    h1 {
+      font-size: 80px;
+      font-family: $poppins-medium;
+      margin: 20px;
     }
   }
 }
